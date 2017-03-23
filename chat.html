@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="chat.css">
+<link rel="stylesheet" type="text/javascript" href="chat.js">
+	<title>Shauna's Robot</title>
+</head>
+<body>
+
+<img id="between" src="space.gif">
+<!--Inline styling of the header gif furthest on the left-->
+<img id="duh" src="me.gif"><span style=" z-index: -1; padding-left: 5.4%;padding-top: 2%; position: fixed;  text-align: center; display: inline-flex; font-family: Broken; font-size: 44px; color: #4F414C; font-size: 74px; font-family: Broken; text-shadow: 3px 3px #FD0EC7; ">Boss<br>&#9734;<br>Shauna</span><span style="position: absolute; right: 0%;margin-top: -0.6%; transform: rotateY(180deg); "><img id="duh" src="me.gif"></span>
+<div class="nav">
+<ul>
+  <li><a href="index.html">Landing</a></li>
+  <li><a href="main.html">About Shauna</a></li>
+  <li><a href="write.html">Writings</a></li>
+  <li><a href="draw.html">Drawings</a></li>
+  <li><a href="photo.html">Photoshop</a></li>
+  <li><a href="pics.html">Photography</a></li>
+  <li><a href="web.html">Websites</a></li>
+  <li><a href="chat.html">Chatbot</a></li>
+  </ul>
+</div>
+
+<div id="bg" class="fadein">
+    <img src="filter.jpg" width="1272px">
+    <img src="summer.jpg" width="1272px">
+    <img src="bday.jpg" width="1272px">
+    <img src="crown.jpg" width="1272px">
+    <img src="kitty.jpg" width="1272px">
+    <img src="monroe.jpg" width="1272px">
+    <img src="bow.jpg" width="1272px">
+    <img src="purple.jpg" width="1272px">
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!--http://stackoverflow.com/questions/14867614/how-to-make-html-css-slideshow-background-fade-->
+<script type="text/javascript">
+$(function() {
+$('.fadein img:gt(0)').hide();
+
+setInterval(function () {
+    $('.fadein :first-child').fadeOut()
+                             .next('img')
+                             .fadeIn()
+                             .end()
+                             .appendTo('.fadein');
+}, 10000); 
+});
+</script>
+
+</body>
+<audio src=".mp3" type="audio/mpeg" autoplay></audio>
+</html>

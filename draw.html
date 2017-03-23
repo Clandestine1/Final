@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link id="style" rel="stylesheet" type="text/css" href="draw.css">
+	<title>Shauna Draws</title>
+	<link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
+	<link rel="alternate stylesheet" type="text/css" href="drawa.css">
+</head>
+<body>
+
+<div id="wrapper">
+<div id="boss">B<br>O<br>S<br>S</div>
+<div id="la">S<br>H<br>A<br>U<br>N<br>A</div>
+
+<img id="between" src="space.gif">
+<!--Inline styling of the header gif furthest on the left-->
+<img id="duh" src="me.gif" ><span style=" z-index: -1; padding-left: 5.4%;padding-top: 2%; position: fixed;  text-align: center; display: inline-flex; font-family: Broken; font-size: 44px; color: #CDADE7; font-size: 74px; font-family: Broken; text-shadow: 3px 3px #FD0EC7; ">Boss<br>&#9734;<br>Shauna</span><span style="position: absolute; right: 0%;margin-top: -0.6%; transform: rotateY(180deg); "><img id="duh" src="me.gif"></span>
+
+<button style=" width: 24.5%; color:#FFE7FA; background-color: grey" type="button" onclick="styling()">Change Style</button>
+<div class="nav">
+<ul>
+   <li><a href="web.html">Home</a></li>
+  <li><a href="index.html">Shauna</a></li>
+  <li><a href="write.html">Writings</a></li>
+  <li><a href="draw.html">Drawings</a></li>
+  <li><a href="photo.html">Photoshop</a></li>
+  <li><a href="pics.html">Photography</a></li>
+  <li><a href="staff.html">Staff</a></li>
+  <li><a href="web.html">Contact</a></li>
+  </ul>
+</div>
+
+
+<center><div id="satire">
+Since she was young, anime had played a heavy part in her life. Naturally, she developed her own anime style of drawing. In 2004, Masashi Kishimoto saw her mesmerizing drawings and immediatly contacted her to be a consultant on the popular Naruto series. Since then she has worked on many more popular anime and manga series, including her new secret project with the Prime Minister of Japan. <br>Warning: Awesome Drawings Ahead!
+<br>
+<br>
+
+<a class="button" href="#popupone"><img style="border: none; height: 100px; width: 100px"  src="pink.jpg"></a>
+
+
+<div id="popupone" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img style="height: 50%; width: 50%;" src="pink.jpg">
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+<a class="button" href="#popuptwo"><img style="height: 100px; width: 100px"  src="naruto.jpg"></a>
+
+
+<div id="popuptwo" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img style="height: 50%; width: 50%;" src="naruto.jpg">
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+<a class="button" href="#popupthree"><img style="height: 100px; width: 100px"  src="old.jpg"></a>
+
+
+<div id="popupthree" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img style="height: 50%; width: 50%;" src="old.jpg">
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+<a class="button" href="#popupfour"><img style="height: 100px; width: 100px"  src="eye.jpg"></a>
+
+
+<div id="popupfour" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img style="height: 50%; width: 50%;" src="eye.jpg">
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+<a class="button" href="#popupfive"><img style="height: 100px; width: 100px"  src="skullz.jpg"></a>
+
+
+<div id="popupfive" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img style="height: 50%; width: 50%;" src="skullz.jpg">
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+
+<a class="button" href="#popupsix"><img style="height: 100px; width: 100px"  src="nine.jpg"></a>
+
+
+<div id="popupsix" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img style="height: 50%; width: 50%;" src="nine.jpg">
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+
+<a class="button" href="#popupseven"><img style="height: 100px; width: 100px"  src="green.jpg"></a>
+
+
+<div id="popupseven" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img style="height: 50%; width: 50%;" src="green.jpg">
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+<a class="button" href="#popupeight"><img style="height: 100px; width: 100px"  src="roxi.jpg"></a>
+
+
+<div id="popupeight" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<img style="height: 50%; width: 50%;" src="roxi.jpg">
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+
+
+</div></center>
+
+<script type="text/javascript">
+	function styling() {
+    var cs = document.getElementById("style");
+    if (cs.href.match("draw.css")) {
+        cs.href = "drawa.css";    
+    }
+    else {
+        cs.href = "draw.css";  
+    }
+}
+
+</script>
+
+
+</body>
+
+<center><footer><div>"The world is beautiful and so am I. Even if you're full of tears and sadness, open your eyes. Do what you want to do. Be who you want to be. Find friends. Don't be in a hurry to grow up. Take your time." <br><br>
+&#9734; Boss Shauna &#9734;
+</div></footer></center>
+</div>
+
+<audio src="Lilium.mp3" type="audio/mpeg" autoplay></audio>
+</html>
